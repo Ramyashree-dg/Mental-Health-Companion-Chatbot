@@ -1,5 +1,5 @@
 streamlit==1.32.2
 transformers==4.38.2
-torch==2.2.1
+torch
 pandas==2.2.1
 matplotlib==3.8.3
