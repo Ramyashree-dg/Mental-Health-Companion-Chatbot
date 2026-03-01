@@ -185,7 +185,11 @@ with chat_col:
 # ---------------- MOOD PANEL ----------------
 with mood_col:
     if st.session_state.mood_history:
-        st.subheader("📊 Mood Trends")
+        st.markdown("""
+        <h3 style='color: var(--text-color);'>
+        📊 Mood Trends
+        </h3>
+        """, unsafe_allow_html=True)
 
         df = pd.DataFrame(st.session_state.mood_history, columns=["Emotion"])
         counts = df["Emotion"].value_counts()
@@ -195,3 +199,4 @@ with mood_col:
         plt.xticks(rotation=45)
 
         st.pyplot(fig)
+
