@@ -67,8 +67,8 @@ st.markdown("""
 # -------------------------------------------------
 # HEADER + DISCLAIMER
 # -------------------------------------------------
-st.markdown("<h1 style='text-align:center;'>🧠 Mental Health Companion Chatbot</h1>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align:center;'>Your Safe Space to Share and Reflect 💙</h4>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center; color:var(--text-color);'>🧠 Mental Health Companion Chatbot</h1>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align:center; color:var(--text-color);'>Your Safe Space to Share and Reflect 💙</h4>", unsafe_allow_html=True)
 
 st.error("⚠️ Disclaimer: This chatbot provides emotional support but is NOT a substitute for professional medical advice.")
 
@@ -193,4 +193,5 @@ with mood_col:
         fig, ax = plt.subplots()
         counts.plot(kind="bar", ax=ax)
         plt.xticks(rotation=45)
+
         st.pyplot(fig)
